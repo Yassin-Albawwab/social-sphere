@@ -32,6 +32,10 @@ body {
   align-items: stretch;
 }
 
+.nav-text-large {
+  font-size: 2rem;
+}
+
 .nav-list a {
   text-decoration: none;
   color: inherit;
@@ -40,10 +44,6 @@ body {
 .nav-list a:hover,
 .nav-list a:focus {
   text-decoration: underline;
-}
-
-.nav-text-large {
-  font-size: 2rem;
 }
 
 .container {
