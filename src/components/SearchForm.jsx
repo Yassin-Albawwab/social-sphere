@@ -15,7 +15,7 @@ export default function SearchForm({ query, users, userId, userOptionSearch }) {
 
   return (
     <Form className="form">
-      <div className="form-row">
+      <div className="form-display">
         <div className="form-group">
           <label htmlFor="query"> Search</label>
           <input
@@ -39,7 +39,7 @@ export default function SearchForm({ query, users, userId, userOptionSearch }) {
             </select>
           </div>
         )}
-        <button className="btn">Search</button>
+        <button className="btn filterBtn">Search</button>
       </div>
     </Form>
   );

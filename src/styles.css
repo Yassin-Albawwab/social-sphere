@@ -24,6 +24,17 @@ body {
   z-index: 10000;
 }
 
+.form-display {
+  display: grid;
+  grid-template-columns: 1fr auto auto;
+  grid-column-gap: 5px;
+  grid-row-gap: 10px;
+}
+
+.btn.filterBtn {
+  align-self: flex-end;
+}
+
 .nav-list {
   margin: 0;
   display: flex;
@@ -351,5 +362,14 @@ body {
   }
   to {
     opacity: 1;
+  }
+}
+
+@media only screen and (max-width: 830px) {
+  .form-display {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-column-gap: 5px;
+    grid-row-gap: 10px;
   }
 }
